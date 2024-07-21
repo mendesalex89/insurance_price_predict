@@ -15,7 +15,7 @@ st.subheader("Task 3: Machine Learning")
 st.write("Student: Alex Arnold de Almeida Mendes")
 
 # Display logo
-st.image("/home/alexmendes/insurance_price_predict/iu.png", width=200)
+st.image("iu.png", width=200)
 
 # Load and display data
 st.header("Exploratory Data Analysis")
