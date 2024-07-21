@@ -22,36 +22,21 @@ st.header("Exploratory Data Analysis")
 df = pd.read_csv("insurance.csv")
 st.write(df.head())
 
-# Plot histogram for numerical features
-st.subheader("Histograms of Numerical Features")
-fig, axes = plt.subplots(1, 3, figsize=(18, 5))
-
-# Histogram for 'age'
-sns.histplot(df['age'], ax=axes[0], kde=True, color='skyblue')
-axes[0].set_title('Age Distribution')
-
-# Histogram for 'bmi'
-sns.histplot(df['bmi'], ax=axes[1], kde=True, color='salmon')
-axes[1].set_title('BMI Distribution')
+# Plot relevant graphs
+st.subheader("Relevant Graphs")
 
 # Histogram for 'charges'
-sns.histplot(df['charges'], ax=axes[2], kde=True, color='green')
-axes[2].set_title('Charges Distribution')
-
+st.subheader("Charges Distribution")
+fig, ax = plt.subplots(figsize=(10, 5))
+sns.histplot(df['charges'], kde=True, color='green', ax=ax)
+ax.set_title('Charges Distribution')
 st.pyplot(fig)
 
-# Plot scatter plots for relationships between features
-st.subheader("Scatter Plots")
-fig, axes = plt.subplots(1, 2, figsize=(18, 5))
-
 # Scatter plot for 'bmi' vs 'charges'
-sns.scatterplot(x='bmi', y='charges', data=df, ax=axes[0], color='purple')
-axes[0].set_title('BMI vs Charges')
-
-# Scatter plot for 'age' vs 'charges'
-sns.scatterplot(x='age', y='charges', data=df, ax=axes[1], color='orange')
-axes[1].set_title('Age vs Charges')
-
+st.subheader("BMI vs Charges")
+fig, ax = plt.subplots(figsize=(10, 5))
+sns.scatterplot(x='bmi', y='charges', data=df, color='purple', ax=ax)
+ax.set_title('BMI vs Charges')
 st.pyplot(fig)
 
 # Preprocessing
