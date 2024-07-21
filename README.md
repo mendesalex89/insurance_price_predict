@@ -133,24 +133,24 @@ To run the Streamlit application locally, follow these steps:
 
 Clone the repository:
 
-sh
+
 Copiar código
 git clone https://github.com/alexmendes/insurance_price_predict.git
 cd insurance_price_predict
 Create a virtual environment and activate it:
 
-sh
+
 Copiar código
 python3 -m venv myenv
 source myenv/bin/activate  # On Windows use `myenv\Scripts\activate`
 Install the required dependencies:
 
-sh
+
 Copiar código
 pip install -r requirements.txt
 Run the Streamlit application:
 
-sh
+
 Copiar código
 streamlit run app.py
 Usage
