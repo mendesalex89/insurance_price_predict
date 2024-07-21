@@ -2,8 +2,6 @@
 
 
 Insurance Charges Prediction
-This repository contains a Streamlit application that predicts insurance charges based on various factors. The project is part of the course task to demonstrate machine learning concepts and their practical application.
-
 Table of Contents
 Introduction
 Machine Learning Paradigms
@@ -24,8 +22,6 @@ Machine learning paradigms include:
 Supervised Learning: The model is trained on labeled data. Examples include linear regression, decision trees, and classification algorithms.
 Unsupervised Learning: The model finds patterns and relationships in unlabeled data. Examples include clustering algorithms like K-Means.
 Semi-Supervised Learning: Combines labeled and unlabeled data to improve learning accuracy.
-The chosen algorithm for this project is Linear Regression, which falls under the supervised learning paradigm because it is trained on labeled data to predict a continuous target variable (insurance charges).
-
 Chosen Algorithm
 Linear Regression
 Linear Regression is a statistical method used to model the relationship between a dependent variable and one or more independent variables. It assumes a linear relationship between the input variables and the single output variable.
@@ -75,6 +71,7 @@ n
 n
 ​
  
+
 where:
 
 𝑌
@@ -136,39 +133,34 @@ To run the Streamlit application locally, follow these steps:
 
 Clone the repository:
 
-
-
+sh
+Copiar código
 git clone https://github.com/alexmendes/insurance_price_predict.git
 cd insurance_price_predict
 Create a virtual environment and activate it:
 
-
-
+sh
+Copiar código
 python3 -m venv myenv
 source myenv/bin/activate  # On Windows use `myenv\Scripts\activate`
 Install the required dependencies:
 
-
-
+sh
+Copiar código
 pip install -r requirements.txt
 Run the Streamlit application:
 
-
-
+sh
+Copiar código
 streamlit run app.py
-
 Usage
-Upon running the Streamlit application, you will see the main interface with options to explore the data, train models, evaluate them, and make predictions.
-Follow the instructions on the interface to interact with the application.
+Upon running the Streamlit application, you will see the main interface with options to explore the data, train models, evaluate them, and make predictions. Follow the instructions on the interface to interact with the application.
 
-
-
+Contributing
+Contributions are welcome! Feel free to open issues and pull requests for improvements.
 
 License
-MIT License 
-
-
-
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 
 
